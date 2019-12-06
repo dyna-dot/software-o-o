@@ -27,7 +27,7 @@ gem 'minitest'
 gem 'xmlhash', '>= 1.2.2'
 
 gem 'prometheus_exporter'
-gem 'puma_worker_killer'
+gem 'puma_worker_killer', '>= 0.1.0'
 
 # HTTP client library for OBS Client
 gem 'faraday'
@@ -45,7 +45,7 @@ group :development do
 end
 
 group :production do
-  gem 'puma'
+  gem 'puma', '>= 3.12.2'
 end
 
 group :test do
